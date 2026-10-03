@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141311">
+  <meta name="description" content="Job Standards Pack, $147. Photo standards for paint and finish work, a sub agreement that ties final payment to done, and a lead-qualify sheet.">
+  <title>job standards your crew can see.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141311'/%3E%3Crect x='5' y='7' width='22' height='18' fill='%23f4efe6'/%3E%3Crect x='5' y='7' width='3' height='18' fill='%23ffd100'/%3E%3C/svg%3E" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="column" data-page>
+    <header class="mast">
+      <h1>job standards your crew can see.</h1>
+    </header>
+
+    <main>
+      <article class="pack">
+        <div class="paper-body">
+          <h2>Job Standards Pack</h2>
+          <p class="price"><sup>$</sup>147</p>
+          <ul class="files">
+            <li>Paint &amp; Finish Photo Standard</li>
+            <li>Sub Closeout Agreement</li>
+            <li>Bid or Walk Sheet</li>
+          </ul>
+          <p class="separate">The three separately are $211.</p>
+        </div>
+        <button
+          type="button"
+          class="buy buy-pack"
+          data-buy="pack"
+          data-name="Job Standards Pack"
+          data-price="$147"
+          data-detail="Paint &amp; Finish Photo Standard, Sub Closeout Agreement, and Bid or Walk Sheet. The three separately are $211."
+        >Get the $147 pack</button>
+      </article>
+
+      <section class="pick">
+        <h2 id="pick-title">Or pick one.</h2>
+
+        <article class="single">
+          <div class="paper-body">
+            <h3>Paint &amp; Finish Photo Standard</h3>
+            <p class="job">Builders tired of arguing about what done looks like can hand the crew this photo standard on day one.</p>
+            <p class="price"><sup>$</sup>97</p>
+          </div>
+          <button
+            type="button"
+            class="buy buy-file"
+            data-buy="paint"
+            data-name="Paint &amp; Finish Photo Standard"
+            data-price="$97"
+            data-detail="Builders tired of arguing about what done looks like can hand the crew this photo standard on day one."
+          >Get Paint &amp; Finish Photo Standard</button>
+        </article>
+
+        <article class="single">
+          <div class="paper-body">
+            <h3>Sub Closeout Agreement</h3>
+            <p class="job">Remodelers who pay subs before the work is actually finished hold final payment with this one-page agreement until the standard is met.</p>
+            <p class="price"><sup>$</sup>67</p>
+          </div>
+          <button
+            type="button"
+            class="buy buy-file"
+            data-buy="sub"
+            data-name="Sub Closeout Agreement"
+            data-price="$67"
+            data-detail="Remodelers who pay subs before the work is actually finished hold final payment with this one-page agreement until the standard is met."
+          >Get Sub Closeout Agreement</button>
+        </article>
+
+        <article class="single">
+          <div class="paper-body">
+            <h3>Bid or Walk Sheet</h3>
+            <p class="job">Owners spending nights on bids that die qualify the lead on this sheet before they bid.</p>
+            <p class="price"><sup>$</sup>47</p>
+          </div>
+          <button
+            type="button"
+            class="buy buy-file"
+            data-buy="bid"
+            data-name="Bid or Walk Sheet"
+            data-price="$47"
+            data-detail="Owners spending nights on bids that die qualify the lead on this sheet before they bid."
+          >Get Bid or Walk Sheet</button>
+        </article>
+      </section>
+
+      <article class="pack again">
+        <div class="paper-body">
+          <h2>Job Standards Pack</h2>
+          <p class="price"><sup>$</sup>147</p>
+          <ul class="files">
+            <li>Paint &amp; Finish Photo Standard</li>
+            <li>Sub Closeout Agreement</li>
+            <li>Bid or Walk Sheet</li>
+          </ul>
+          <p class="separate">The three separately are $211.</p>
+        </div>
+        <button
+          type="button"
+          class="buy buy-pack"
+          data-buy="pack"
+          data-name="Job Standards Pack"
+          data-price="$147"
+          data-detail="Paint &amp; Finish Photo Standard, Sub Closeout Agreement, and Bid or Walk Sheet. The three separately are $211."
+        >Get the $147 pack</button>
+      </article>
+    </main>
+
+    <footer class="foot">
+      <p>instant PDF, print it, hand it to the crew.</p>
+    </footer>
+  </div>
+
+  <div class="sheet-root" data-sheet hidden>
+    <button type="button" class="scrim" data-scrim tabindex="-1" aria-label="Close"></button>
+    <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-name" aria-describedby="sheet-detail">
+      <div class="paper-body">
+        <h2 id="sheet-name" data-sheet-name></h2>
+        <p class="sheet-price" data-sheet-price></p>
+        <p class="job" id="sheet-detail" data-sheet-detail></p>
+      </div>
+      <a class="buy buy-pack" data-sheet-go hidden>Continue to checkout</a>
+      <p class="sheet-empty" data-sheet-empty hidden>No checkout link yet. Add it in checkout.config.js.</p>
+      <button type="button" class="sheet-close" data-sheet-close>Close</button>
+    </div>
+  </div>
+
+  <script src="checkout.config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
