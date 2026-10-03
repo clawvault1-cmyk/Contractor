@@ -79,7 +79,7 @@ a {
 
 .mast h1 {
   margin: 0;
-  padding: calc(0.95rem + env(safe-area-inset-top)) 1.15rem 0.85rem;
+  padding: calc(0.7rem + env(safe-area-inset-top)) 1.15rem 0.55rem;
   color: var(--paper);
   font-family: var(--cond);
   font-size: clamp(1.15rem, 4.85vw, 1.6rem);
@@ -89,15 +89,6 @@ a {
   white-space: nowrap;
 }
 
-.mast h1::after {
-  content: "";
-  display: block;
-  width: 2.25rem;
-  height: 0.34rem;
-  margin-top: 0.55rem;
-  background: var(--yellow);
-}
-
 .pack,
 .single,
 .sheet {
@@ -105,9 +96,51 @@ a {
   color: var(--ink);
 }
 
-.pack,
-.sheet {
+.sheet,
+.pack.again {
   box-shadow: inset 8px 0 0 var(--yellow);
+}
+
+.cover,
+.scene {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.feeling {
+  margin: 0 0 0.7rem;
+  font-family: var(--cond);
+  font-size: 1.48rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.02;
+  text-wrap: pretty;
+}
+
+.lead .paper-body {
+  padding-top: 0.85rem;
+  padding-bottom: 0.75rem;
+}
+
+.pack.lead h2 {
+  margin-bottom: 0.28rem;
+  font-size: 1.35rem;
+  letter-spacing: 0.01em;
+}
+
+.lead .price {
+  margin: 0 0 0.55rem;
+  font-size: 4.35rem;
+}
+
+.lead .files li {
+  padding: 0.28rem 0;
+  font-size: 1.12rem;
+}
+
+.lead .separate {
+  margin-top: 0.5rem;
 }
 
 .pick {
@@ -155,6 +188,15 @@ a {
 .single h3 {
   font-size: 1.8rem;
   max-width: 12em;
+}
+
+.single .paper-body::before {
+  content: "";
+  display: block;
+  width: 2.1rem;
+  height: 0.32rem;
+  margin-bottom: 0.7rem;
+  background: var(--yellow);
 }
 
 .price {
@@ -369,7 +411,7 @@ a {
 
 @media (min-width: 800px) {
   .mast h1 {
-    padding-top: 2rem;
+    padding-top: 1.6rem;
     font-size: 1.55rem;
   }
 }
